@@ -32,5 +32,6 @@ public class VoidMethodsPractice2 {
 }
 /*
 1.Write a method that calculates the sum of 3 numbers
+2. Write a mothod that shows the greater number of 2 numbers
 
  */
