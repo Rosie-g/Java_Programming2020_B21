@@ -1,5 +1,6 @@
 package day29_Methods;
 
+import javax.crypto.spec.PSource;
 import java.util.Arrays;
 
 public class VoidMethodsPractice {
@@ -9,12 +10,17 @@ public class VoidMethodsPractice {
         int[] a1 = {100, -200, 300, 50, 40, 59, 700, 0, 1, 2};
 
         arrayMaxNumber(a1);
+        arrayMinNumber(a1);
 
         int[] a2 = {1, 2, 3, 4, 5, 6, 7, 800, 9, 0, 1, 12, 13, 4};
         arrayMaxNumber(a2);
-
-        arrayMinNumber(a1);
         arrayMinNumber(a2);
+
+        int[] arr3 = {1,1,2,3,3,4,5,5,5,5,6,6,6,7};
+        arrayUniqueElements(arr3);
+
+        int[] arr4 = {10,10,8,11,11,11,9};
+        arrayUniqueElements(arr4);
     }
 
     public static void arrayMaxNumber(int[] arr) {
@@ -40,6 +46,22 @@ public class VoidMethodsPractice {
             }
         }
         System.out.println("Minimum number: " + min);
+    }
+
+    public static void arrayUniqueElements(int[] arr){
+
+        for(int each:arr) {
+            int count = 0;
+            for(int each2:arr){
+                if(each==each2){
+                    count++;
+                }
+            }
+            if(count==1){
+                System.out.print(each+" ");
+            }
+        }
+        System.out.println();
     }
 }
 
