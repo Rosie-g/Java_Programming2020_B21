@@ -111,10 +111,16 @@ public class StringUtility {
         return Arrays.equals(ch1,ch2);
     }
 
+    /*
+    verify if the string is palindrome
+     */
     public static boolean isPalindrome(String str){
         return reverse(str).equalsIgnoreCase(str);
     }
 
+    /*
+    takes a sentence and word
+     */
     public static int frequencyOfWord(String sentence, String word) {
         sentence = sentence.toLowerCase();
         word = word.toLowerCase();
