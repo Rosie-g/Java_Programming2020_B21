@@ -86,6 +86,66 @@ public class ArraysUtility {
     }
 
     /*
+   Combines two arrays of doubles and return the new array
+    */
+    public static double[] combineTwoArrays(double[] arr1, double[] arr2) {
+
+        double[] arr3 = new double[arr1.length + arr2.length];
+        int i = 0; // represents the index nums of arr3
+
+        for (double each : arr1) {
+            arr3[i++] = each; // each elements of arr1 is being assigned to the index of arr3
+        }
+
+        // i=2
+        for (double each : arr2) {
+            arr3[i++] = each; // each elements of arr2 is being assigned to the index of arr3
+        }
+
+        return arr3;
+    }
+
+    /*
+   Combines two arrays of chars and return the new array
+    */
+    public static char[] combineTwoArrays(char[] arr1, char[] arr2) {
+
+        char[] arr3 = new char[arr1.length + arr2.length];
+        int i = 0; // represents the index nums of arr3
+
+        for (char each : arr1) {
+            arr3[i++] = each; // each elements of arr1 is being assigned to the index of arr3
+        }
+
+        // i=2
+        for (char each : arr2) {
+            arr3[i++] = each; // each elements of arr2 is being assigned to the index of arr3
+        }
+
+        return arr3;
+    }
+
+    /*
+   Combines two arrays of Strings and return the new array
+    */
+    public static String[] combineTwoArrays(String[] arr1, String[] arr2) {
+
+        String[] arr3 = new String[arr1.length + arr2.length];
+        int i = 0; // represents the index nums of arr3
+
+        for (String each : arr1) {
+            arr3[i++] = each; // each elements of arr1 is being assigned to the index of arr3
+        }
+
+        // i=2
+        for (String each : arr2) {
+            arr3[i++] = each; // each elements of arr2 is being assigned to the index of arr3
+        }
+
+        return arr3;
+    }
+
+    /*
      sorts the array of integers in descending order, and returns it as an array
      */
     public static int[] sort(int[] arr){ //{2,1,3}
