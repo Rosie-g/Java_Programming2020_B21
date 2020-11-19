@@ -119,7 +119,7 @@ public class StringUtility {
     }
 
     /*
-    takes a sentence and word
+    takes a sentence and word, then returns the frequency of the word
      */
     public static int frequencyOfWord(String sentence, String word) {
         sentence = sentence.toLowerCase();

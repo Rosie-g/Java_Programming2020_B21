@@ -35,6 +35,37 @@ public class ArraysUtility {
     }
 
     /*
+    returns the maximum number from an array of double
+     */
+    public static double max(double[]arr){
+        double max = arr[0];
+
+
+        for (double each : arr) {
+            if (each > max) {
+                max = each;
+            }
+        }
+
+        return max;
+    }
+
+    /*
+    returns the minimum number from an array of double
+     */
+    public static double min(double[] arr) {
+        double min = arr[0];
+
+        for (double each : arr) {
+            if (each < min) {
+                min = each;
+            }
+        }
+
+        return min;
+    }
+
+    /*
    Combines two arrays of integers and return the new array
     */
     public static int[] combineTwoArrays(int[] arr1, int[] arr2) {
