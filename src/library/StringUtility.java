@@ -1,7 +1,11 @@
 package library;
 
-public class StringUtility {
+import java.util.Arrays;
 
+public class StringUtility {
+    /*
+        returns the frequency of given char from teh given string, as int
+     */
     public static int frequency(String str, char ch) {
         int count = 0;
 
@@ -15,6 +19,9 @@ public class StringUtility {
 
     }
 
+    /*
+        returns the unique characters for the given string
+     */
     public static String unique(String str) {
         String unique = "";
 
@@ -29,6 +36,9 @@ public class StringUtility {
         return unique;
     }
 
+    /*
+        reverses the given string object and returns it
+     */
     public static String reverse(String str) {
         String result = "";
 
@@ -39,6 +49,9 @@ public class StringUtility {
 
     }
 
+    /*
+     removes the duplicates from the string and returns it
+     */
     public static String removeDuplicates(String str) {
 
         String result = ""; //
@@ -57,5 +70,64 @@ public class StringUtility {
 
          */
 
+    }
+
+    /*
+    returns the frequency of characters
+     */
+    public static String frequencyOfCharacters(String str){
+        String result = ""; //a3b4c2
+
+        String nonDup =  StringUtility.removeDuplicates(str);   // a b c
+
+        for(int i =0; i <= nonDup.length()-1; i++) {
+            char ch = nonDup.charAt(i);  //a
+            int count = StringUtility.frequency(str, ch);   // 3 4 2
+            result += "" + ch + count;
+        }
+
+        return result;
+    }
+
+    /*
+  anagram:
+      "adbbdbd"  ==> abc
+      "dbaaaaaaaa" ==> abc
+    output
+      true
+      verify if two strings are anagram, returns the boolean result
+   */
+                                  // ccaab      // bbbaccc
+    public static boolean isAnagram(String str1,String str2){
+        str1=removeDuplicates(str1); // cab
+        str2=removeDuplicates(str2); // bac
+
+        char[] ch1=str1.toCharArray(); // [c, a, b]
+        char[] ch2=str2.toCharArray(); // [b, a, c]
+
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
+
+        return Arrays.equals(ch1,ch2);
+    }
+
+    public static boolean isPalindrome(String str){
+        return reverse(str).equalsIgnoreCase(str);
+    }
+
+    public static int frequencyOfWord(String sentence, String word) {
+        sentence = sentence.toLowerCase();
+        word = word.toLowerCase();
+
+        int frequency = 0;
+
+
+        while (sentence.contains(word)) {
+            sentence = sentence.replaceFirst(word, "");
+            frequency++;
+
+        }
+
+        return frequency;
     }
 }
