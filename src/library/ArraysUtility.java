@@ -208,9 +208,77 @@ public class ArraysUtility {
     /*
     replaces the [] with {}  while printing the array
      */
-        public static String printArray ( int[] arr){
+    public static String printArray ( int[] arr){
             String str = Arrays.toString(arr);
             str.replace("[", "{").replace("]", "}");
             return str;
         }
+
+    /*
+    add element to the array of integers
+     */
+    public static int[] addElement(int[] array, int element) {
+
+        int[] result = new int[array.length + 1];
+
+        for (int i = 0; i <= array.length - 1; i++) {
+            result[i] = array[i];
+        }
+
+        result[result.length - 1] = element;
+
+
+        return result;
+    }
+
+    /*
+    add element to the array of integers
+     */
+    public static double[] addElement(double[] array, double element) {
+
+        double[] result = new double[array.length + 1];
+
+        for (int i = 0; i <= array.length - 1; i++) {
+            result[i] = array[i];
+        }
+
+        result[result.length - 1] = element;
+
+
+        return result;
+    }
+
+    /*
+    add element to the array of chars
+     */
+    public static char[] addElement(char[] array, char element) {
+
+        char[] result = new char[array.length + 1];
+
+        for (int i = 0; i <= array.length - 1; i++) {
+            result[i] = array[i];
+        }
+
+        result[result.length - 1] = element;
+
+
+        return result;
+    }
+
+    /*
+    add element to the array of String
+     */
+    public static String[] addElement(String[] array, String element) {
+
+        String[] result = new String[array.length + 1];
+
+        for (int i = 0; i <= array.length - 1; i++) {
+            result[i] = array[i];
+        }
+
+        result[result.length - 1] = element;
+
+
+        return result;
+    }
     }
