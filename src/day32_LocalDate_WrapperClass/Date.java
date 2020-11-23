@@ -19,5 +19,18 @@ public class Date {
 
         System.out.println(today);
 
+        String[] names = {"Julia", "Inna", "Anna", "Ruslan", "Livio"};
+        LocalDate[] birthday = { LocalDate.of(1990,11,23),
+                                 LocalDate.of(1995,02,10),
+                                 LocalDate.of(2000,03,15),
+                                 LocalDate.of(2005, 04,20),
+                                 LocalDate.of(2010, 05,25) };
+
+        for (int i = 0; i <= names.length-1 ; i++) {
+            System.out.println(names[i]+"' birthday is: "+birthday[i]);
+            System.out.println(names[i]+" was born on leap year: "+birthday[i].isLeapYear());
+        }
+
+
     }
 }
