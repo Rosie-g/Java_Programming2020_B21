@@ -12,6 +12,38 @@ public class WrapperClassPractice {
             }
         }
         System.out.println("sum: " + sum);
+
+        System.out.println("==================================");
+
+        String password = "Password#7";
+        String upperLetters = "";
+        String lowerCase = "";
+        String digits = "";
+        String specialChar = "";
+
+        for (char each : password.toCharArray()) {
+            if (Character.isUpperCase(each)) {
+                upperLetters += each;
+            } else if (Character.isLowerCase(each)) {
+                lowerCase += each;
+            } else if (Character.isDigit(each)) {
+                digits += each;
+            } else {
+                specialChar += each;
+            }
+        }
+
+        System.out.println("UpperLetters: " + upperLetters);
+        System.out.println("LowerLetters: " + lowerCase);
+        System.out.println("Digits: " + digits);
+        System.out.println("specialChar: " + specialChar);
+
+        boolean isValid = password.length() >= 8 && upperLetters.length() > 0 && lowerCase.length() > 0
+                && digits.length() > 0 && specialChar.length() > 0;
+
+        System.out.println(isValid);
+
+
     }
 }
 /*
