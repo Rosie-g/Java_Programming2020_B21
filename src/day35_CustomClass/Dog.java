@@ -12,7 +12,7 @@ public class Dog {
     public LocalDate DOB;
     public int age;
 
-    public void setInfo(String dogNickNAme, String dogBreed, String dogSize, char dogGender, String dogColor, LocalDate dogDOB,int age) {
+    public void setInfo(String dogNickNAme, String dogBreed, String dogSize, char dogGender, String dogColor, LocalDate dogDOB) {
         nickName = dogNickNAme;
         breed = dogBreed;
         size = dogSize;
