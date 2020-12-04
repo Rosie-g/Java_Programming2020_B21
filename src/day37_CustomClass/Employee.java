@@ -18,6 +18,18 @@ public class Employee {
         this.salary = calculateSalary();
     }
 
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", companyName='" + companyName + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", gender='" + gender + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+
     public double calculateSalary() {
         return hourlyRate * weeklyHours * 52;
     }
