@@ -14,7 +14,7 @@ public class Car {
         this.brand = brand;
         this.model = model;
         this.color = color;
-        DofB = dofB;
+        this.DofB = dofB;
         this.price = price;
         this.mileage = mileage;
         year = DofB.getYear();
@@ -32,4 +32,10 @@ public class Car {
                 ", year=" + year +
                 '}';
     }
+
+    public void drive(){
+        System.out.println("Driving "+brand+" "+model);
+    }
+
+
 }
