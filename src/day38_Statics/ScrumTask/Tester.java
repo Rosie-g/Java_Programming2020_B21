@@ -1,0 +1,43 @@
+package day38_Statics.ScrumTask;
+
+public class Tester {
+
+    public String name, ID, jobTitle,companyName;
+    public double salary;
+    public char gender;
+
+    public void setInfo (String name, String ID, String jobTitle,String companyName, double salary, char gender) {
+        this.name = name;
+        this.ID = ID;
+        this.jobTitle = jobTitle;
+        this.companyName=companyName;
+        this.salary = salary;
+        this.gender = gender;
+    }
+
+    public void smokeTest(){
+        System.out.println(name+" is performing smoke testing");
+    }
+
+    public void creatingTicket(){
+        System.out.println(name+" is cresting ticket");
+    }
+
+    public String toString() {
+        return "TesterClass{" +
+                "name='" + name + '\'' +
+                ", ID='" + ID + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=" + salary +
+                ", gender=" + gender +
+                '}';
+    }
+}
+/*
+ create a class called Tester
+                    Attributes:
+                        name, employeeID, JobTitle, Salary
+                        isHuman, isCybertekStudent
+                    Actions:
+                        setInfo(), smokeTesting(),  creatingTicket(), toString()
+ */
