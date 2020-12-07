@@ -1,4 +1,4 @@
-package day38_StaticKeyword;
+package day38_Statics;
 
 import java.text.DecimalFormat;
 
