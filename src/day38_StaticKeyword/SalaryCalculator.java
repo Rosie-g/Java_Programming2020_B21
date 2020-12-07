@@ -4,18 +4,20 @@ public class SalaryCalculator {
 
     public double hourlyRate, weeklyHours, stateTaxRate, federalTaxRate, salary, salaryAfterTax;
 
-    public double calcutlateSalary() {
-        return hourlyRate * weeklyHours * 52;
-    }
 
     public void setInfo(double hourlyRate, double weeklyHours, double stateTaxRate, double federalTaxRate) {
         this.hourlyRate = hourlyRate;
         this.weeklyHours = weeklyHours;
         this.stateTaxRate = (stateTaxRate > 1) ? stateTaxRate / 100 : stateTaxRate; // 8 will be 0.08
         this.federalTaxRate = (federalTaxRate > 1) ? federalTaxRate / 100 : federalTaxRate;
-        this.salary = calcutlateSalary();
+        this.salary = calculateSalary();
         this.salaryAfterTax = calculateSalaryAfterTax();
     }
+
+    public double calculateSalary(){
+        return hourlyRate * weeklyHours * 52;
+    }
+
 
     public double calculateStateTax() {
         return salary * stateTaxRate;
@@ -36,11 +38,16 @@ public class SalaryCalculator {
 
     public String toString() {
         return "SalaryCalculator{" +
-                "weeklyHours=" + weeklyHours +
-                ", salary=" + salary +
-                ", salaryAfterTax=" + salaryAfterTax +
+                "hourlyRate=" + hourlyRate +
+                ", salary= $" + salary +
+                ", salaryAfterTax= $" + salaryAfterTax +
                 '}';
     }
+
+    public boolean equals(SalaryCalculator s1){
+        return    this.salary == s1.salary;
+    }
+
 }
 /*
  Create a custom class called SalaryCalculator
