@@ -32,6 +32,15 @@ public class SalaryCalculator {
     public double calculateSalaryAfterTax() {
         return salary - calculateTotalTax();
     }
+
+
+    public String toString() {
+        return "SalaryCalculator{" +
+                "weeklyHours=" + weeklyHours +
+                ", salary=" + salary +
+                ", salaryAfterTax=" + salaryAfterTax +
+                '}';
+    }
 }
 /*
  Create a custom class called SalaryCalculator
