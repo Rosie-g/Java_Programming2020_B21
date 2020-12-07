@@ -1,5 +1,7 @@
 package day38_StaticKeyword;
 
+import java.text.DecimalFormat;
+
 public class Circle {
 
     public double radius, diameter, area, perimeter;
@@ -20,6 +22,19 @@ public class Circle {
     }
 
 
+    public String toString() {
+        DecimalFormat df = new DecimalFormat("0.00");
+        return "Circle{" +
+                "radius=" + radius +
+                ", diameter=" + diameter +
+                ", area=" + df.format(area) +
+                ", perimeter=" + df.format(perimeter) +
+                '}';
+    }
+
+    public boolean equals(Circle circle) {
+        return this.radius == circle.radius;
+    }
 }
 /*
  1. create a custom class called Circle
