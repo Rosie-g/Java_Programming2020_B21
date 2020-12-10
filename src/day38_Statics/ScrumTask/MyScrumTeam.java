@@ -110,7 +110,9 @@ public class MyScrumTeam {
 
         System.out.println("=========================");
 
-        ArrayList<ScrumTeam> scrumList = new ArrayList<>(Arrays.asList(scrums));
+        ArrayList<ScrumTeam> scrumList = new ArrayList<>();
+
+        scrumList.addAll(Arrays.asList(scrums) );
 
         System.out.println(scrumList);
 
@@ -136,6 +138,8 @@ public class MyScrumTeam {
             for (Tester eachTester : eachScrum.testersTeam) {
                 System.out.println(eachTester.name+": "+eachTester.salary);
             }
+
+            System.out.println("==================================");
 
             for (Developer eachDeveloper : eachScrum.developersTeam) {
                 System.out.println(eachDeveloper.name+": "+eachDeveloper.salary);
