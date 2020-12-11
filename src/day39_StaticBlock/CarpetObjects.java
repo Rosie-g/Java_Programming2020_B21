@@ -1,6 +1,4 @@
-package day39_ConstructorIntro;
-
-import day35_CustomClass.Car;
+package day39_StaticBlock;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package day39_ConstructorIntro;
+package day39_StaticBlock;
 
 public class Carpet {
 
