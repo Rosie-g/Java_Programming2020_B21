@@ -8,5 +8,10 @@ public class Test {
         System.out.println(Data.defaultVariable);
 
 
+        Data obj = new Data();
+
+        Data.publicMethod();
+        Data.defaultMethod();
+        // Data.privateMethod(); impossible to reach
     }
 }
