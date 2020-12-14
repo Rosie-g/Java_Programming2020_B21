@@ -1,5 +1,6 @@
 package library;
 
+import day41_Encapsulation.Data.*;
 import day41_Encapsulation.Data;
 
 public class Test {
@@ -9,6 +10,8 @@ public class Test {
 
         System.out.println(Data.publicVariable);
 
+
+       // Data obj1 = new Data();
 
     }
 }
