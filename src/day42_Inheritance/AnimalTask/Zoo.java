@@ -18,5 +18,14 @@ public class Zoo { // Zoo has A Tiger
         cat.drink("milk");
         cat.sleep();
         cat.meow();
+
+        Dog dog = new Dog("Nina","American bull dog",'F',2,"White and brown","Big");
+
+        System.out.println(dog);
+        dog.eat("chicken");
+        dog.drink("water");
+        dog.sleep();
+        dog.bark();
+
     }
 }
