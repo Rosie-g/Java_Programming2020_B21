@@ -7,7 +7,7 @@ public class Chef extends Employee { // Chef is An Employee, Chef IS A Person
     /*
     inherited:
         variables: name, age, gender, hourlyRate, jobTitle, ID
-        methods: work, setInfo, toString, eat, sleep
+        methods: work,setInfo, setInfo, toString, eat, sleep, calcSalary
      */
 
     public Chef(String name, int age, char gender, double hourlyRate, String jobTitle, String ID) {
@@ -16,6 +16,10 @@ public class Chef extends Employee { // Chef is An Employee, Chef IS A Person
 
     public void makeOrder() {
         System.out.println(jobTitle + name + " is making order");
+    }
+
+    public void cook() {
+        System.out.println(jobTitle + name + " is cooking");
     }
 }
 /*
