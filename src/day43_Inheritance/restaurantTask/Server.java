@@ -1,6 +1,6 @@
 package day43_Inheritance.restaurantTask;
 
-import day43_Inheritance.PersonTask.Employee;
+import day43_Inheritance.personTask.Employee;
 
 public class Server extends Employee {
 

@@ -1,4 +1,4 @@
-package day43_Inheritance.PersonTask;
+package day43_Inheritance.personTask;
 
 
 public class AppleInc {

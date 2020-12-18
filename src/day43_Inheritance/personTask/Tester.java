@@ -1,6 +1,4 @@
-package day43_Inheritance.PersonTask;
-
-import day43_Inheritance.PersonTask.Employee;
+package day43_Inheritance.personTask;
 
 public class Tester extends Employee { // Tester IS A person,  Tester IS An Employee
    /*
