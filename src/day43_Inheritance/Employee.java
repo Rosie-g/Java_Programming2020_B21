@@ -21,6 +21,10 @@ public class Employee extends Person { // Employee IS A Person
         this.jobTitle = jobTitle;
     }
 
+    public double calcSalary() {
+        return hourlyRate * 40 * 52;
+    }
+
 
     public String toString() {
         return "Employee{" +
@@ -32,6 +36,8 @@ public class Employee extends Person { // Employee IS A Person
                 ", gender=" + gender +
                 '}';
     }
+
+
 }
 /*
  name, age, gender, hourlyRate, jobTitle, ID

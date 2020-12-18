@@ -1,6 +1,6 @@
 package day43_Inheritance;
 
-public class Tester extends Employee {
+public class Tester extends Employee { // Tester IS A person,  Tester IS An Employee
    /*
     inherited:
         variables: name, age, gender,hourlyRate
