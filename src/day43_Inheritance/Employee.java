@@ -1,0 +1,39 @@
+package day43_Inheritance;
+
+public class Employee extends Person { // Employee IS A Person
+/*
+    inherited:
+        variables: name, age, gender
+        methods: setInfo, eat, sleep, toString
+     */
+
+    public double hourlyRate;
+    public String ID, jobTitle;
+
+    public void work() {
+        System.out.println(name + " is working");
+    }
+
+    public void setInfo(String name, int age, char gender, double hourlyRate, String jobTitle, String ID) {
+        setInfo(name, age, gender);
+        this.hourlyRate = hourlyRate;
+        this.ID = ID;
+        this.jobTitle = jobTitle;
+    }
+
+
+    public String toString() {
+        return "Employee{" +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", jobTitle='" + jobTitle + '\'' +
+                " hourlyRate=" + hourlyRate +
+                ", ID='" + ID + '\'' +
+                ", gender=" + gender +
+                '}';
+    }
+}
+/*
+ name, age, gender, hourlyRate, jobTitle, ID
+        setInfo, eat(), sleep(), work()
+ */
