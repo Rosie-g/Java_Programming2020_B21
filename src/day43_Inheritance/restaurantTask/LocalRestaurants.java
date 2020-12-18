@@ -37,7 +37,7 @@ public class LocalRestaurants {
             budget += eachServer.calcSalary();
         }
 
-        System.out.println("budget = " + budget);
+        System.out.println("Servers budget = " + budget);
 
         System.out.println("==============================================================");
 
@@ -45,5 +45,6 @@ public class LocalRestaurants {
             System.out.println(eachChef.name);
             budget += eachChef.calcSalary();
         }
+        System.out.println("Chefs budget = " + budget);
     }
 }
