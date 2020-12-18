@@ -19,7 +19,7 @@ public class AppleInc {
         developer1.sleep();
         developer1.work();
         developer1.coding();
-        developer1.calcSalary();
+        System.out.println("Salary: "+developer1.calcSalary());
         System.out.println(developer1);
     }
 }
