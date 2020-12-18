@@ -1,4 +1,4 @@
-package day43_Inheritance;
+package day43_Inheritance.PersonTask;
 
 public class Person {
 

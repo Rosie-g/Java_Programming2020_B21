@@ -1,6 +1,4 @@
-package day43_Inheritance;
-
-import javax.jws.soap.SOAPBinding;
+package day43_Inheritance.PersonTask;
 
 public class Developer extends Employee { // Developer IS A Person. Developer IS A Employee
 

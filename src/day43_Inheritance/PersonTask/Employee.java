@@ -1,4 +1,4 @@
-package day43_Inheritance;
+package day43_Inheritance.PersonTask;
 
 public class Employee extends Person { // Employee IS A Person
 /*
@@ -28,12 +28,13 @@ public class Employee extends Person { // Employee IS A Person
 
     public String toString() {
         return "Employee{" +
-                ", name='" + name + '\'' +
+                " name='" + name + '\'' +
                 ", age=" + age +
                 ", jobTitle='" + jobTitle + '\'' +
                 " hourlyRate=" + hourlyRate +
                 ", ID='" + ID + '\'' +
                 ", gender=" + gender +
+                ", salary= "+calcSalary()+
                 '}';
     }
 

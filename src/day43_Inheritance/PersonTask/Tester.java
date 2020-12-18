@@ -1,4 +1,6 @@
-package day43_Inheritance;
+package day43_Inheritance.PersonTask;
+
+import day43_Inheritance.PersonTask.Employee;
 
 public class Tester extends Employee { // Tester IS A person,  Tester IS An Employee
    /*
@@ -12,7 +14,7 @@ public class Tester extends Employee { // Tester IS A person,  Tester IS An Empl
     }
 
     public void testing() {
-        System.out.println(jobTitle + name + " is testing");
+        System.out.println(jobTitle + " " + name + " is testing");
     }
 }
 /*
