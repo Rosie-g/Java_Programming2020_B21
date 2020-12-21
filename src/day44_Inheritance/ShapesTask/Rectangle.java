@@ -1,7 +1,6 @@
 package day44_Inheritance.ShapesTask;
 
 
-
 public class Rectangle extends Shape {
 
     /*
@@ -15,5 +14,14 @@ public class Rectangle extends Shape {
         this.width = width;
         this.length = length;
         setInfo("Rectangle");
+    }
+
+    protected double calcArea() {
+        return width * length;
+    }
+
+    @Override
+    public double calcPerimeter() {
+        return (width + length) * 2;
     }
 }

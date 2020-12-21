@@ -17,7 +17,7 @@ public class Shape {
     }
 
 
-    public double calcArea(){
+     double calcArea(){
         return 0;
     }
 
@@ -28,9 +28,9 @@ public class Shape {
     @Override
     public String toString() {
         return "Shape{" +
-                "name='" + name + '\'' +
-                "area='" + calcArea() + '\'' +
-                "perimeter='" + calcPerimeter() + '\'' +
+                "name = '" + name + '\'' +
+                ", area = '" + calcArea() + '\'' +
+                ", perimeter = '" + calcPerimeter() + '\'' +
                 '}';
     }
 }

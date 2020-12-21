@@ -9,9 +9,18 @@ public class Square extends Shape {
 
     public double side;
 
-    public Square(double side){
+    public Square(double side) {
         this.side = side;
         setInfo("Square");
     }
 
+    @Override
+    double calcArea() {
+        return side * side;
+    }
+
+    @Override
+    public double calcPerimeter() {
+        return side * 4;
+    }
 }

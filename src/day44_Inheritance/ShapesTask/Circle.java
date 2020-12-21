@@ -16,5 +16,13 @@ public class Circle extends Shape { // Circle IS A Shape
         diameter = radius * 2;
     }
 
+    public double calcArea() {
+        return radius * radius * PI;
+    }
 
+    public double calcPerimeter() {
+        return diameter * PI;
+    }
 }
+
+
