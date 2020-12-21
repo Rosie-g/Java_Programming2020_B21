@@ -1,10 +1,10 @@
 package day44_Inheritance.WebDriverTask;
 
-public class RemoteDriver {
+public class WebDriver {
 
     public String name, version;
 
-    public RemoteDriver(String name, String version) {
+    public WebDriver(String name, String version) {
         this.name = name;
         this.version = version;
     }
@@ -14,7 +14,11 @@ public class RemoteDriver {
     }
 
     public void close(){
-        System.out.println("Closing th Remote Driver");
+        System.out.println("Closing the Remote Driver");
+    }
+
+    public void maximize(){
+        System.out.println("Maximizing the Remote Driver");
     }
 
     @Override
