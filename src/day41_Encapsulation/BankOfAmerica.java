@@ -6,6 +6,7 @@ public class BankOfAmerica {
 
         BankAccount obj1 = new BankAccount("Josh", "Joner",123456 );
 
+
         System.out.println(obj1.getAccountHolder());
         System.out.println(obj1.getBalance());
 
@@ -18,5 +19,7 @@ public class BankOfAmerica {
         obj1.availableBalance();
 
         System.out.println(BankAccount.name);
+
+
     }
 }
