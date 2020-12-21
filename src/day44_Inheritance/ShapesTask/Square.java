@@ -10,8 +10,9 @@ public class Square extends Shape {
     public double side;
 
     public Square(double side) {
+        super("Square");
         this.side = side;
-        setInfo("Square");
+
     }
 
     @Override

@@ -12,8 +12,8 @@ public class Shape {
         hasPerimeter = true;
     }
 
-    public void setInfo(String name) {
-        this.name = name;
+    public Shape(String name){
+        this.name=name;
     }
 
 
