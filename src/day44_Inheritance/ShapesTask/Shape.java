@@ -4,7 +4,7 @@ package day44_Inheritance.ShapesTask;
 public class Shape {
 
     public String name;
-    public static boolean isShape, hasArea, hasPerimeter;
+    public final static boolean isShape, hasArea, hasPerimeter;
 
     static {
         isShape = true;
@@ -12,7 +12,7 @@ public class Shape {
         hasPerimeter = true;
     }
 
-    public void setName(String name) {
+    public void setInfo(String name) {
         this.name = name;
     }
 
