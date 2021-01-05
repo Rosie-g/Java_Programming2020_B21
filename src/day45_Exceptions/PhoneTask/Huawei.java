@@ -7,6 +7,6 @@ public final class Huawei extends Phone {
     }
 
     public void spy(){
-
+        System.out.println(brand+" "+model+" is spying");
     }
 }
