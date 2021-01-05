@@ -1,6 +1,6 @@
 package day45_Exceptions.PhoneTask;
 
-public class Iphone extends Phone {
+public final class Iphone extends Phone {
 
     public Iphone(String model, double price) {
         super("Iphone", model, "USA", price);
