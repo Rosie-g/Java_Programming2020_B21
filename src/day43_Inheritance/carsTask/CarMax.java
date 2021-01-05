@@ -5,9 +5,9 @@ public class CarMax {
     public static void main(String[] args) {
 
 
-        Toyota toyota = new Toyota("Camry","blue",2020,235000,20000);
+        Toyota toyota = new Toyota("Camry", "blue", 2020, 235000, 20000);
 
-        BMW bmw = new BMW("X5","Red",2018,15000,50000);
+        BMW bmw = new BMW("X5", "Red", 2018, 15000, 50000);
 
         System.out.println(toyota);
         System.out.println(bmw);
@@ -17,5 +17,7 @@ public class CarMax {
 
         System.out.println(Toyota.isAffordable);
         System.out.println(Toyota.isImmortal);
+
     }
+
 }
