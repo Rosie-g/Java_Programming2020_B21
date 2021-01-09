@@ -42,7 +42,7 @@ public class Car {
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
-                ", price=" + price +
+                ", price= $" + price +
                 '}';
     }
 
@@ -50,7 +50,7 @@ public class Car {
         System.out.println(brand + model + " is starting");
     }
 
-    public void drive() {
+    public final void drive() {
         System.out.println(brand + model + " is driving");
     }
 }
