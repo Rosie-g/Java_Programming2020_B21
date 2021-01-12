@@ -15,6 +15,12 @@ public abstract class Car {
     }
 
     public abstract void start(); // worry about details later
+    // private abstract void start(); private methods can not be overridden
+    // public final abstract void start(); final methods can not be overridden
+    // public static abstract void start(); static methods can not be overridden
+
+    // public abstract void start( int a ); we can overload abstract class
+
 
     @Override
     public String toString() {
