@@ -13,8 +13,4 @@ public abstract class Shape { // not concrete
     public abstract double perimeter();
 
 }
-//class Test{
-//    public static void main(String[] args) {
-//        Rectangle obj = new Rectangle(4,5);
-//    }
-//}
+
