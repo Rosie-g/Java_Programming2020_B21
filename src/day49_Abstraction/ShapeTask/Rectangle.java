@@ -1,6 +1,6 @@
 package day49_Abstraction.ShapeTask;
 
-public class Rectangle extends Shape {
+public final class Rectangle extends Shape {
 
     public double w, l;
 

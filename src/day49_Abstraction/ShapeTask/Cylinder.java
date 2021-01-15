@@ -1,6 +1,6 @@
 package day49_Abstraction.ShapeTask;
 
-public class Cylinder extends Shape implements Volume {
+public final class Cylinder extends Shape implements Volume {
 
     public double r, d, h;
     public final static double PI = 3.14;

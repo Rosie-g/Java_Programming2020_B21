@@ -1,6 +1,6 @@
 package day49_Abstraction.ShapeTask;
 
-public class Square extends Shape {
+public final class Square extends Shape {
 
     public double side;
 
