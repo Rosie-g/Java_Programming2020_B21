@@ -32,9 +32,9 @@ public final class Cube extends Shape implements Volume {
     public String toString() {
         return "Shape{" +
                 "name='" + name + '\'' +
-                ", area='" + area() + '\'' +
-                ", perimeter='" + perimeter() + '\'' +
-                ", volume='" + volume() + '\'' +
+                ", area='" + df.format(area()) + '\'' +
+                ", perimeter='" + df.format(perimeter()) + '\'' +
+                ", volume='" + df.format(volume()) + '\'' +
                 '}';
     }
 }
