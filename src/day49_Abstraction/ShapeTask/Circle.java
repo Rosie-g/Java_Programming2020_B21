@@ -8,6 +8,9 @@ public class Circle extends Shape {
 
     public Circle(double r) {
         super("Circle");
+        if (r <= 0) {
+            throw new RuntimeException("No such a circle with radius of " + r);
+        }
         this.r = r;
         d = r * 2;
     }

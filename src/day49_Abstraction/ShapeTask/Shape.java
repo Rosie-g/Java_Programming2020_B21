@@ -2,9 +2,12 @@ package day49_Abstraction.ShapeTask;
 
 public abstract class Shape {
 
-    public String name;
+    public final String name;
 
     public Shape(String name) {
+        if (name.isEmpty()){
+            throw new RuntimeException("Name can't be empty");
+        }
         this.name = name;
     }
 
