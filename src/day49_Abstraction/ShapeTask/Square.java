@@ -2,7 +2,7 @@ package day49_Abstraction.ShapeTask;
 
 public final class Square extends Shape {
 
-    public double side;
+    private double side;
 
 
     public Square(double side) {
@@ -10,7 +10,7 @@ public final class Square extends Shape {
         if (side <= 0) {
             throw new RuntimeException("No such a square with side of " + side);
         }
-        this.side = side;
+        setSide(side);
     }
 
     @Override
@@ -21,5 +21,13 @@ public final class Square extends Shape {
     @Override
     public double perimeter() {
         return side * 4;
+    }
+
+    public double getSide() {
+        return side;
+    }
+
+    public void setSide(double side) {
+        this.side = side;
     }
 }
