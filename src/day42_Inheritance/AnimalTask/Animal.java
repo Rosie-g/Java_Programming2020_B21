@@ -37,4 +37,8 @@ public class Animal {
                 ", age=" + age +
                 '}';
     }
+
+    public void meow(){
+
+    }
 }
