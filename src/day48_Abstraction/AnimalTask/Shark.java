@@ -1,4 +1,4 @@
-package day48_Abstrsaction.AnimalTask;
+package day48_Abstraction.AnimalTask;
 
 public class Shark extends Animal implements Swimmable,Predator{
 

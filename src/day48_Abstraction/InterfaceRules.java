@@ -1,4 +1,4 @@
-package day48_Abstrsaction;
+package day48_Abstraction;
 
 public interface InterfaceRules {
 
