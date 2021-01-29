@@ -65,13 +65,23 @@ public class SetPractice {
 
         TreeSet<Integer> treeSet = new TreeSet<>();
 
-        treeSet.addAll(Arrays.asList(null, null, null, null, null, null));
+//        treeSet.addAll(Arrays.asList(null, null, null, null, null, null));
 //        System.out.println(treeSet);
 //
 //        String str4 = null;
 //
 //        System.out.println(str4.equals("Muhtar"));
 
+
+        System.out.println("========================================");
+        Set<Integer> numbers = new HashSet<>();
+        numbers.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+        int max = Collections.max(numbers);
+        System.out.println(max);
+
+        int min = Collections.min(numbers);
+        System.out.println(min);
 
 
     }
