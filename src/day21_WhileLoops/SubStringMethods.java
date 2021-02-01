@@ -4,7 +4,7 @@ public class SubStringMethods {
 
     public static void main(String[] args) {
 
-        String email = "Alexander_Tsegaye@Apple.com";
+        String email = "Gazarian_Ruzanna@Apple.com";
         //              012345
         int indexOf_ = email.indexOf("_");
         int indexOfAt = email.lastIndexOf("@");
